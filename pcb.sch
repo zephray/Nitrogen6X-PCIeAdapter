@@ -1,0 +1,462 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C?
+U 1 1 5EB95BAF
+P 8850 4400
+F 0 "C?" V 8800 4200 50  0000 C CNN
+F 1 "10nF" V 8800 4600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8888 4250 50  0001 C CNN
+F 3 "~" H 8850 4400 50  0001 C CNN
+	1    8850 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EB95BB5
+P 8850 4500
+F 0 "C?" V 8800 4300 50  0000 C CNN
+F 1 "10nF" V 8800 4700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8888 4350 50  0001 C CNN
+F 3 "~" H 8850 4500 50  0001 C CNN
+	1    8850 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EB95BBB
+P 8850 4700
+F 0 "C?" V 8800 4500 50  0000 C CNN
+F 1 "10nF" V 8800 4900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8888 4550 50  0001 C CNN
+F 3 "~" H 8850 4700 50  0001 C CNN
+	1    8850 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EB95BC1
+P 8850 4800
+F 0 "C?" V 8800 4600 50  0000 C CNN
+F 1 "10nF" V 8800 5000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8888 4650 50  0001 C CNN
+F 3 "~" H 8850 4800 50  0001 C CNN
+	1    8850 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8400 4400 8700 4400
+Wire Wire Line
+	8400 4500 8700 4500
+Wire Wire Line
+	8400 4700 8700 4700
+Wire Wire Line
+	8400 4800 8700 4800
+$Comp
+L Device:C C?
+U 1 1 5EB95C31
+P 6750 4500
+F 0 "C?" V 6700 4300 50  0000 C CNN
+F 1 "10nF" V 6700 4700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6788 4350 50  0001 C CNN
+F 3 "~" H 6750 4500 50  0001 C CNN
+	1    6750 4500
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EB95C37
+P 6750 4600
+F 0 "C?" V 6700 4400 50  0000 C CNN
+F 1 "10nF" V 6700 4800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6788 4450 50  0001 C CNN
+F 3 "~" H 6750 4600 50  0001 C CNN
+	1    6750 4600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7200 4500 6900 4500
+Wire Wire Line
+	7200 4600 6900 4600
+Text Label 6000 4500 0    50   ~ 0
+PCIE_RXP0
+Text Label 6000 4600 0    50   ~ 0
+PCIE_RXN0
+Text Label 9600 4700 2    50   ~ 0
+PCIE_TXP0
+Text Label 9600 4800 2    50   ~ 0
+PCIE_TXN0
+Wire Wire Line
+	9000 4700 9600 4700
+Wire Wire Line
+	6000 4500 6600 4500
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 5EBADC53
+P 3400 4200
+F 0 "J1" H 3450 4617 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 3450 4526 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 3400 4200 50  0001 C CNN
+F 3 "~" H 3400 4200 50  0001 C CNN
+	1    3400 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4600 6600 4600
+Wire Wire Line
+	9600 4800 9000 4800
+Text Label 9600 4400 2    50   ~ 0
+PCIE_CLKP
+Text Label 9600 4500 2    50   ~ 0
+PCIE_CLKN
+Wire Wire Line
+	9000 4400 9600 4400
+Wire Wire Line
+	9000 4500 9600 4500
+Text Label 2600 4100 0    50   ~ 0
+PCIE_RXP0
+Text Label 2600 4000 0    50   ~ 0
+PCIE_RXN0
+Wire Wire Line
+	2600 4100 3200 4100
+Wire Wire Line
+	2600 4000 3200 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5EBEA7CD
+P 3100 4600
+F 0 "#PWR?" H 3100 4350 50  0001 C CNN
+F 1 "GND" H 3105 4427 50  0000 C CNN
+F 2 "" H 3100 4600 50  0001 C CNN
+F 3 "" H 3100 4600 50  0001 C CNN
+	1    3100 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4200 3100 4200
+Text Label 2600 4400 0    50   ~ 0
+PCIE_TXP0
+Text Label 2600 4300 0    50   ~ 0
+PCIE_TXN0
+Wire Wire Line
+	3200 4400 2600 4400
+Wire Wire Line
+	2600 4300 3200 4300
+Wire Wire Line
+	3100 4200 3100 4500
+Text Label 4300 4200 2    50   ~ 0
+PCIE_CLKP
+Text Label 4300 4100 2    50   ~ 0
+PCIE_CLKN
+Wire Wire Line
+	4300 4200 3700 4200
+Wire Wire Line
+	4300 4100 3700 4100
+Wire Wire Line
+	3700 4300 3800 4300
+Wire Wire Line
+	3800 4300 3800 4500
+Wire Wire Line
+	3800 4500 3100 4500
+Connection ~ 3100 4500
+Wire Wire Line
+	3100 4500 3100 4600
+Wire Wire Line
+	3700 4000 3800 4000
+Wire Wire Line
+	3800 4000 3800 4300
+Connection ~ 3800 4300
+NoConn ~ 3700 4400
+$Comp
+L symbols:Bus_PCIE_1x J?
+U 1 1 5EC0DAAC
+P 7800 2900
+F 0 "J?" H 7800 2965 50  0000 C CNN
+F 1 "Bus_PCIE_1x" H 7800 2874 50  0000 C CNN
+F 2 "Connector_PCBEdge:BUS_PCIexpress_x1" H 7800 2900 50  0001 C CNN
+F 3 "" H 7800 2900 50  0001 C CNN
+	1    7800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EC1AFDC
+P 7100 5000
+F 0 "#PWR?" H 7100 4750 50  0001 C CNN
+F 1 "GND" H 7105 4827 50  0000 C CNN
+F 2 "" H 7100 5000 50  0001 C CNN
+F 3 "" H 7100 5000 50  0001 C CNN
+	1    7100 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4400 7100 4400
+Wire Wire Line
+	7100 4400 7100 4700
+Wire Wire Line
+	7200 4900 7100 4900
+Connection ~ 7100 4900
+Wire Wire Line
+	7100 4900 7100 5000
+Wire Wire Line
+	7200 4700 7100 4700
+Connection ~ 7100 4700
+Wire Wire Line
+	7100 4700 7100 4900
+Wire Wire Line
+	7200 3700 7100 3700
+Wire Wire Line
+	7100 3700 7100 4400
+Connection ~ 7100 4400
+Wire Wire Line
+	7200 3400 7100 3400
+Wire Wire Line
+	7100 3400 7100 3700
+Connection ~ 7100 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5EC1DD1E
+P 8500 5000
+F 0 "#PWR?" H 8500 4750 50  0001 C CNN
+F 1 "GND" H 8505 4827 50  0000 C CNN
+F 2 "" H 8500 5000 50  0001 C CNN
+F 3 "" H 8500 5000 50  0001 C CNN
+	1    8500 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3400 8500 3400
+Wire Wire Line
+	8500 3400 8500 4300
+Wire Wire Line
+	8400 4900 8500 4900
+Connection ~ 8500 4900
+Wire Wire Line
+	8500 4900 8500 5000
+Wire Wire Line
+	8400 4600 8500 4600
+Connection ~ 8500 4600
+Wire Wire Line
+	8500 4600 8500 4900
+Wire Wire Line
+	8400 4300 8500 4300
+Connection ~ 8500 4300
+Wire Wire Line
+	8500 4300 8500 4600
+$Comp
+L Device:R R?
+U 1 1 5EC20C1B
+P 8900 3950
+F 0 "R?" H 8970 3996 50  0000 L CNN
+F 1 "4.7K" H 8970 3905 50  0000 L CNN
+F 2 "" V 8830 3950 50  0001 C CNN
+F 3 "~" H 8900 3950 50  0001 C CNN
+	1    8900 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EC21A5A
+P 9000 4100
+F 0 "TP?" V 8954 4288 50  0000 L CNN
+F 1 "TestPoint" V 9045 4288 50  0000 L CNN
+F 2 "" H 9200 4100 50  0001 C CNN
+F 3 "~" H 9200 4100 50  0001 C CNN
+	1    9000 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8400 4000 8400 3900
+Wire Wire Line
+	8400 3900 8800 3900
+Connection ~ 8400 3900
+Wire Wire Line
+	8400 4100 8900 4100
+Connection ~ 8900 4100
+Wire Wire Line
+	8900 4100 9000 4100
+Wire Wire Line
+	8900 3800 8800 3800
+Wire Wire Line
+	8800 3800 8800 3900
+Wire Wire Line
+	7200 4800 7000 4800
+Wire Wire Line
+	7000 4800 7000 2900
+Wire Wire Line
+	7000 2900 8500 2900
+Wire Wire Line
+	8500 2900 8500 3100
+Wire Wire Line
+	8500 3100 8400 3100
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EC28472
+P 6900 3500
+F 0 "TP?" V 6900 4200 50  0000 C CNN
+F 1 "TestPoint" V 6900 3900 50  0000 C CNN
+F 2 "" H 7100 3500 50  0001 C CNN
+F 3 "~" H 7100 3500 50  0001 C CNN
+	1    6900 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EC28E3C
+P 6900 3600
+F 0 "TP?" V 6900 4300 50  0000 C CNN
+F 1 "TestPoint" V 6900 4000 50  0000 C CNN
+F 2 "" H 7100 3600 50  0001 C CNN
+F 3 "~" H 7100 3600 50  0001 C CNN
+	1    6900 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EC29466
+P 6900 4100
+F 0 "TP?" V 6900 4800 50  0000 C CNN
+F 1 "TestPoint" V 6900 4500 50  0000 C CNN
+F 2 "" H 7100 4100 50  0001 C CNN
+F 3 "~" H 7100 4100 50  0001 C CNN
+	1    6900 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EC297BC
+P 6900 3100
+F 0 "TP?" V 6900 3800 50  0000 C CNN
+F 1 "TestPoint" V 6900 3500 50  0000 C CNN
+F 2 "" H 7100 3100 50  0001 C CNN
+F 3 "~" H 7100 3100 50  0001 C CNN
+	1    6900 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EC2A034
+P 6900 3200
+F 0 "TP?" V 6900 3900 50  0000 C CNN
+F 1 "TestPoint" V 6900 3600 50  0000 C CNN
+F 2 "" H 7100 3200 50  0001 C CNN
+F 3 "~" H 7100 3200 50  0001 C CNN
+	1    6900 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EC2A227
+P 6900 3300
+F 0 "TP?" V 6900 4000 50  0000 C CNN
+F 1 "TestPoint" V 6900 3700 50  0000 C CNN
+F 2 "" H 7100 3300 50  0001 C CNN
+F 3 "~" H 7100 3300 50  0001 C CNN
+	1    6900 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EC2A4B3
+P 6900 3800
+F 0 "TP?" V 6900 4500 50  0000 C CNN
+F 1 "TestPoint" V 6900 4200 50  0000 C CNN
+F 2 "" H 7100 3800 50  0001 C CNN
+F 3 "~" H 7100 3800 50  0001 C CNN
+	1    6900 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EC2A932
+P 6900 3900
+F 0 "TP?" V 6900 4600 50  0000 C CNN
+F 1 "TestPoint" V 6900 4300 50  0000 C CNN
+F 2 "" H 7100 3900 50  0001 C CNN
+F 3 "~" H 7100 3900 50  0001 C CNN
+	1    6900 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EC2AAE2
+P 6900 4000
+F 0 "TP?" V 6900 4700 50  0000 C CNN
+F 1 "TestPoint" V 6900 4400 50  0000 C CNN
+F 2 "" H 7100 4000 50  0001 C CNN
+F 3 "~" H 7100 4000 50  0001 C CNN
+	1    6900 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EC2AC83
+P 9000 3800
+F 0 "TP?" V 9000 4500 50  0000 C CNN
+F 1 "TestPoint" V 9000 4200 50  0000 C CNN
+F 2 "" H 9200 3800 50  0001 C CNN
+F 3 "~" H 9200 3800 50  0001 C CNN
+	1    9000 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EC2B385
+P 9000 3300
+F 0 "TP?" V 9000 4000 50  0000 C CNN
+F 1 "TestPoint" V 9000 3700 50  0000 C CNN
+F 2 "" H 9200 3300 50  0001 C CNN
+F 3 "~" H 9200 3300 50  0001 C CNN
+	1    9000 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EC2B685
+P 9000 3200
+F 0 "TP?" V 9000 3900 50  0000 C CNN
+F 1 "TestPoint" V 9000 3600 50  0000 C CNN
+F 2 "" H 9200 3200 50  0001 C CNN
+F 3 "~" H 9200 3200 50  0001 C CNN
+	1    9000 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 3100 7200 3100
+Wire Wire Line
+	6900 3200 7200 3200
+Wire Wire Line
+	6900 3300 7200 3300
+Wire Wire Line
+	6900 3500 7200 3500
+Wire Wire Line
+	6900 3600 7200 3600
+Wire Wire Line
+	6900 3800 7200 3800
+Wire Wire Line
+	6900 3900 7200 3900
+Wire Wire Line
+	6900 4000 7200 4000
+Wire Wire Line
+	6900 4100 7200 4100
+Wire Wire Line
+	9000 3800 8900 3800
+Connection ~ 8900 3800
+Wire Wire Line
+	8400 3300 9000 3300
+Wire Wire Line
+	9000 3200 8400 3200
+$EndSCHEMATC
